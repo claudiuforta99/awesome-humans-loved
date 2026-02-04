@@ -86,6 +86,21 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            .subtitle { font-size: 1.2rem; padding: 0 20px; }
+            .container { padding: 40px 20px; margin: 20px; }
+            .features { grid-template-columns: 1fr; gap: 20px; }
+            .feature { padding: 20px; }
+            .feature h3 { font-size: 1.2rem; }
+            body { overflow-y: auto; }
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2.5rem; }
+            .container { padding: 30px 15px; margin: 10px; }
+        }
         
         .feature:hover {
             transform: translateY(-10px);
